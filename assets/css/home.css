@@ -1,0 +1,79 @@
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color:transparent;
+    width: 40rem;
+    border: 3px red solid;
+}
+
+header {
+   margin: auto;
+    text-align: center;
+    color: blue;
+    border-bottom: 1px grey solid;
+    height: 2.5rem;
+}
+#class-form{
+    height: 4rem;
+    width: 100%;
+}
+.disc-class input {
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+}
+.select_and_input{
+    display: flex;
+
+}
+#catg{
+    height:3rem;
+    width: 50%;
+    border: 2px red solid;
+}
+.select_and_input select:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: bisque;
+}
+#date-val{
+    height: 3rem;
+    width: 50%;
+    border: 2px blue solid;
+}
+.select_and_input input:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: bisque;
+}
+
+#submitButton{
+    width: 17%;
+    height: 2.5rem;
+    margin-left: 208px;
+
+}
+#deleteButton{
+    width: 17%;
+    height: 2.5rem;
+    margin-left: 4px;
+}
+.buttonDesign{
+    height: 50px;
+    width: 120px;
+    color: white;
+    transition: transform 0.3s;
+    margin-top: 5px;
+    border-bottom: 2px black solid;
+}
+.buttonDesign:hover{
+    box-shadow: 0px 0px 5px 2px white ; 
+    transform:scale(1.1);
+}
+.colorRed{
+    background-color: red;
+    
+}
+
+.colorGrey{
+    background-color: gray

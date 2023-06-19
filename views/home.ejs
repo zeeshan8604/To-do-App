@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="class-form">
+    <form action="creat-todo" method="post">
+        <div class="disc-class">
+            <!-- <label for="discp">Discription</label> -->
+            <span>Discription</span>
+            <input type="text" name="discp" id="discp" placeholder="what do you need to do ?" required>
+        </div>
+        <div class="select_and_input">
+            <!-- <label for="category">category</label> -->
+            <select name="category" id="catg" required>
+                <option value="" disabled selected>select your option</option>
+                <option>Personal</option>
+                <option>Work</option>
+                <option>clean</option>
+                <option>School</option>
+                <option>Others</option>
+            </select>
+            <input type="date" id="date-val" name="datevalue" placeholder="Due date:dd/mm/yyyy" required>
+        </div>
+        <button class="buttonDesign colorGrey" id="submitButton" type="submit"><i class="fa fa-plus-square"> </i>
+            Add Task</button>
+        <button class="buttonDesign colorRed" id="deleteButton" type="submit"><i class="fa fa-trash-o"></i> Delete
+            Task</button>
+
+    </form>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="/js/script.js"></script>

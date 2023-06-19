@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    width: 26rem;
+    margin: auto;
+    background-color: black;
+}
+header{
+    color: blue;
+}
