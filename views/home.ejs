@@ -26,6 +26,24 @@
     </form>
 </div>
 
+<div>
+    <% for(let i of todoList) { let j=0; let newIds='descids'+j; %>
+        <div class="singleTask">
+            <input type="checkbox" name="delechack" class="delechack" onclick="checkedOrNot()" uid = <%= i._id %> >
+            <div class="name_and_dueDate">
+                <p id=<%= i._id %>  uid = <%= i._id %> class="dispdsc"><%= i.desc %></p>
+                <p id=<%= i._id + i.dueDate %> class="dueDate"  ><%= i.dueDate %></p>
+            </div>
+            <div class="catesec">
+                <%= i.category %>
+            </div>
+                <div class="editClass"><a href="/editdata/?id=<%=i._id %>">Edit</a></div>
+        </div>
+        <% j++; } %>
+
+</div>
+
+
 
 
 

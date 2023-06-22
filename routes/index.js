@@ -2,8 +2,9 @@ const express=require('express');
 const router=express.Router();
 const homeController=require('../controller/homecontroller');
 router.get('/', homeController.home);
-
-
-
-console.log('router is loaded')
+router.post('/create_todo', homeController.createTodo);
+router.post('/delete_todo', homeController.deleteTodo);
+router.get('/editdata', homeController.Editpage);
+router.post('/edit-todolist', homeController.editDetails);
+console.log('router is loaded');
 module.exports = router;
