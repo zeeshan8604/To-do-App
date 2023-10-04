@@ -74,10 +74,10 @@ return res.redirect('/');
 // function for fetching data for edit page
 module.exports.EditPage = async function(req,res){ // here we are fetching the data whic need to be edited
     console.log('aaa',req.query)
-   await TodoLists.findById(req.query.id);
+   const uptodo=await TodoLists.findById(req.query.id);
         return res.render('editPage',{
         title:'Edit Page',
-        todolist:todoLists
+        todoLists:uptodo
         });
 }
 // function for updatind tada after the todo is being edited
